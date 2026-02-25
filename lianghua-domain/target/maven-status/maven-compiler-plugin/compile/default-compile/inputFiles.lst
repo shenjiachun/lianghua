@@ -1,0 +1,13 @@
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/model/entity/MarketData.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/model/valobj/AnalysisType.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/model/entity/AnalysisResult.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/service/MarketDataDomainService.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/model/valobj/TradingSuggestion.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/model/valobj/Price.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/service/AnalysisDomainService.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/model/valobj/AIModel.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/gateway/AnalysisResultGateway.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/gateway/MarketDataFetcherGateway.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/gateway/MarketDataGateway.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/market/model/valobj/StockCode.java
+/home/runner/work/lianghua/lianghua/lianghua-domain/src/main/java/com/lianghua/domain/analysis/gateway/AIModelGateway.java

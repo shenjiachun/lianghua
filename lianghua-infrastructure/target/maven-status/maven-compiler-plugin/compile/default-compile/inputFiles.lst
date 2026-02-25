@@ -1,0 +1,10 @@
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/ai/client/AliyunQwenClient.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/market/gateway/MarketDataFetcherGatewayImpl.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/mapper/AnalysisResultMapper.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/ai/client/DoubaoClient.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/mapper/MarketDataMapper.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/gateway/MarketDataGatewayImpl.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/do_/AnalysisResultDO.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/ai/gateway/AIModelGatewayImpl.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/gateway/AnalysisResultGatewayImpl.java
+/home/runner/work/lianghua/lianghua/lianghua-infrastructure/src/main/java/com/lianghua/infrastructure/persistence/do_/MarketDataDO.java
