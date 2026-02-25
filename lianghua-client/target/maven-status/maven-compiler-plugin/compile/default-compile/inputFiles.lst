@@ -1,8 +1,0 @@
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/command/AnalyzeMarketCmd.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/api/AnalysisServiceI.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/dto/MarketDataDTO.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/query/MarketDataQry.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/query/AnalysisResultQry.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/api/MarketDataServiceI.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/command/FetchMarketDataCmd.java
-/home/runner/work/lianghua/lianghua/lianghua-client/src/main/java/com/lianghua/client/dto/AnalysisResultDTO.java

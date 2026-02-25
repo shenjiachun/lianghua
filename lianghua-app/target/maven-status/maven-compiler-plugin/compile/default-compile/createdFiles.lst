@@ -1,6 +1,0 @@
-com/lianghua/app/service/AnalysisServiceImpl.class
-com/lianghua/app/query/AnalysisResultQryExe.class
-com/lianghua/app/query/MarketDataQryExe.class
-com/lianghua/app/command/FetchMarketDataCmdExe.class
-com/lianghua/app/service/MarketDataServiceImpl.class
-com/lianghua/app/command/AnalyzeMarketCmdExe.class
