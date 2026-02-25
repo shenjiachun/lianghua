@@ -1,0 +1,53 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /lianghua
+
+spring:
+  application:
+    name: lianghua
+  datasource:
+    url: jdbc:h2:file:./data/lianghua;AUTO_SERVER=TRUE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:sql/schema.sql
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    com.lianghua: DEBUG
+    com.baomidou: INFO
+
+# 量化分析系统配置
+lianghua:
+  ai:
+    # 阿里云通义千问配置
+    # 申请地址：https://dashscope.aliyun.com/
+    aliyun:
+      api-key: ${ALIYUN_API_KEY:}
+      model: qwen-turbo
+    # 字节跳动豆包配置
+    # 申请地址：https://www.volcengine.com/product/doubao
+    bytedance:
+      api-key: ${BYTEDANCE_API_KEY:}
+      model: doubao-pro-4k
+  market:
+    # Tushare市场数据接口配置
+    # 申请地址：https://tushare.pro/
+    tushare:
+      token: ${TUSHARE_TOKEN:}
