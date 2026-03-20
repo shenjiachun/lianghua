@@ -62,8 +62,8 @@ public class AnalysisReportCmdServiceImpl implements IAnalysisReportCmdService {
         // 2. 获取历史K线数据
         List<KLineData> kLines = marketDataGateway.findKLineData(cmd.getSymbol(), analysisDays);
 
-        // 3. 计算技术指标
-        TechnicalIndicators indicators = analysisDomainService.calcTechnicalIndicators(kLines);
+        // 3. 计算技术指标（现由 TechnicalIndicators 静态工厂完成）
+        TechnicalIndicators indicators = TechnicalIndicators.calculate(kLines);
 
         // 4. 构建AI提示词
         String prompt = analysisDomainService.buildAnalysisPrompt(marketData, kLines);
@@ -75,8 +75,8 @@ public class AnalysisReportCmdServiceImpl implements IAnalysisReportCmdService {
         // 6. 解析AI返回的结构化数据
         ParsedAnalysis parsed = parseAIContent(aiContent, marketData);
 
-        // 7. 创建报告实体
-        AnalysisReport report = analysisDomainService.createReport(
+        // 7. 创建报告实体（现由 AnalysisReport 静态工厂完成，保证聚合根一致性）
+        AnalysisReport report = AnalysisReport.create(
                 cmd.getSymbol(),
                 marketData.getStockName(),
                 aiProvider,
@@ -94,7 +94,7 @@ public class AnalysisReportCmdServiceImpl implements IAnalysisReportCmdService {
         // 8. 持久化报告
         analysisReportGateway.save(report);
 
-        log.info("量化分析报告生成成功，reportId：{}", report.getReportId());
+        log.info("量化分析报告生成成功，reportId：{}，摘要：{}", report.getReportId(), report.getAnalysisSummary());
         return SingleResponse.of(toDTO(report, indicators));
     }
 
